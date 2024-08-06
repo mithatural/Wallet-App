@@ -13,20 +13,36 @@
     <main>
         <section class="border border-2 border-danger m-5 rounded-3" id="expenses">
             <h3 class="text-center m-3">Harcama Formu</h3>
-            <ul class="p-3 m-3">
-                <h5>Tarih</h5>
-                <li style="list-style: none;"><input type="date" name="" id=""></li>
-            </ul>
             
-            <ul class="">
-                <h5>Harcama Miktarı</h5>                
-                <li style="list-style: none;"><input type="number" name="" id="" placeholder="1000 $"></li>
-            </ul>
+            <div class="container mt-4">
+                <div class="row">
+                    <!-- Tarih Input (6 sütun) -->
+                    <div class="col-md-6 mb-4">
+                        <div class="form-group">
+                            <label for="dateInput">Tarih</label>
+                            <input type="date" id="dateInput" class="form-control">
+                        </div>
+                    </div>
             
-            <ul>
-                <h5>Harcama Alanı</h5>
-                <li style="list-style: none;"><input type="text"></li>
-            </ul>
+                    <!-- Harcama Miktarı Input (6 sütun) -->
+                    <div class="col-md-6 mb-4">
+                        <div class="form-group">
+                            <label for="amountInput">Harcama Miktarı</label>
+                            <input type="number" id="amountInput" placeholder="1000 $" class="form-control">
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="row">
+                    <!-- Harcama Alanı Input (12 sütun) -->
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label for="areaInput">Harcama Alanı</label>
+                            <input type="text" id="areaInput" class="form-control">
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <input type="button" value="Kaydet" class="bg-danger text-white rounded-3 p-3 m-2">
         </section>
