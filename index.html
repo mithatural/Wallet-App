@@ -13,13 +13,13 @@
     <h1 class="text-center m-3 text-warning fw-light">My Wallet App</h1>
 
     <main>
-        <section class=" m-5 rounded-3" id="expenses">
+        <section class=" m-5 rounded-3 giderler">
             <h3 class="text-center m-3">Harcama Formu</h3>
             
             <div class="container mt-4">
                 <div class="row">
                     <!-- Tarih Input (6 sütun) -->
-                    <div class="col-md-6 mb-4">
+                    <div class="col-md-6 mb-4 tarih">
                         <div class="form-group">
                             <label for="dateInput">Tarih</label>
                             <input type="date" id="dateInput" class="form-control">
@@ -27,7 +27,7 @@
                     </div>
             
                     <!-- Harcama Miktarı Input (6 sütun) -->
-                    <div class="col-md-6 mb-4">
+                    <div class="col-md-6 mb-4 miktar">
                         <div class="form-group">
                             <label for="amountInput">Harcama Miktarı</label>
                             <input type="number" id="amountInput" placeholder="1000 $" class="form-control">
@@ -37,33 +37,33 @@
             
                 <div class="row">
                     <!-- Harcama Alanı Input (12 sütun) -->
-                    <div class="col-md-12">
+                    <div class="col-md-12 alan">
                         <div class="form-group">
                             <label for="areaInput">Harcama Alanı</label>
-                            <input type="text" id="areaInput" class="form-control">
+                            <input type="text" id="areaInput" class="form-control "placeholder="Kira,Fatura,Kredi Kartı">
                         </div>
                     </div>
                 </div>
 
-                <div class="d-flex align-items-center justify-content-center">
+                <div class="d-flex align-items-center justify-content-center kirmizi">
                     <input type="button" value="Kaydet" class="bg-danger text-white rounded-3 p-3 m-4 center-div" >
                 </div>
-            </div>
-
             
+            </div>
+               
         </section>
         <hr>
 
-        <div id="income" class="m-4 p-4">
-            <input type="number" name="" id="" placeholder="Kira,Fatura,Kredi Kartı" class="col-md-10 text-center">
-            <input type="button" value="Ekle" class="bg-success text-white p-1 rounded-2 col-md-1" >
+        <div id="income" class="m-4 p-4 gelir">
+            <input type="number" name="" id=""  class="col-md-10 text-center" placeholder="Gelir giriniz">
+            <input type="button" value="Ekle" class="bg-success text-white p-1 rounded-2 col-md-1 yesil" >
         </div>
 <hr>
      <section>
                 <div class="container mt-4">
             <table class="table table-bordered text-center">
                 <tbody>
-                    <tr>
+                    <tr class="tablo">
                         <td class="fw-bold">Tarih</td>
                         <td class="fw-bold">Harcama Alanı</td>
                         <td class="fw-bold">Miktar ($)</td>
@@ -92,8 +92,8 @@
             </table>
         </div>
 
-        <div class="align-items-center justify-content-center d-flex">
-            <input type="button" value="Bilgileri Temizle" class="bg-secondary text-white p-2 rounded-2 m-4">
+        <div class="align-items-center justify-content-center d-flex ">
+            <input type="button" value="Bilgileri Temizle" class="bg-secondary text-white p-2 rounded-2 m-4 gri">
         </div>
         
         
