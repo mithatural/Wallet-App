@@ -11,7 +11,7 @@
     <h1 class="text-center m-3 text-warning fw-light">My Wallet App</h1>
 
     <main>
-        <section class="border border-2 border-danger m-5 rounded-3" id="harcama">
+        <section class="border border-2 border-danger m-5 rounded-3" id="expenses">
             <h3 class="text-center m-3">Harcama Formu</h3>
             <ul class="p-3 m-3">
                 <h5>Tarih</h5>
@@ -31,20 +31,48 @@
             <input type="button" value="Kaydet" class="bg-danger text-white rounded-3 p-3 m-2">
         </section>
 
-        <div>
-            <input type="number" name="" id="">
+        <div id="income">
+            <input type="number" name="" id="" placeholder="Kira,Fatura,Kredi Kartı">
             <input type="button" value="Ekle" class="bg-success text-white p-1 rounded-2">
         </div>
 
+     <section>
+                <div class="container mt-4">
+            <table class="table table-bordered text-center">
+                <tbody>
+                    <tr>
+                        <td class="fw-bold">Tarih</td>
+                        <td class="fw-bold">Harcama Alanı</td>
+                        <td class="fw-bold">Miktar ($)</td>
+                        <td class="fw-bold">İşlem</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
+        <div class="container mt-4">
+            <table class="table table-bordered text-center">
+                <tbody class="fw-bold">
+                    <tr>
+                        <td>Geliriniz ($) :</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Gideriniz ($) :</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Kalan ($) :</td>
+                        <td>0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
-
-
-
-
-
-
-
+        <input type="button" value="Bilgileri Temizle" class="bg-secondary text-white p-2 rounded-3">
+        
+    </section>
+    
 
 
     </main>
